@@ -1,1 +1,1 @@
-{"m_DefineSymbols":{"m_Value":{},"m_Initialized":false},"m_AllowUnsafeCode":{"m_Value":false,"m_Initialized":false},"m_ScriptDebugInfoEnabled":{"m_Value":false,"m_Initialized":true}}
+{"m_DefineSymbols":{"m_Value":{"Server":"PROBUILDER_EXPERIMENTAL_FEATURES","Standalone":"PROBUILDER_EXPERIMENTAL_FEATURES"},"m_Initialized":true},"m_AllowUnsafeCode":{"m_Value":false,"m_Initialized":false},"m_ScriptDebugInfoEnabled":{"m_Value":false,"m_Initialized":true}}
