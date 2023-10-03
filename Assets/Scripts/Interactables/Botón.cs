@@ -26,19 +26,24 @@ public class Botón : Interactable
     {
         if(Input.GetKey(KeyCode.E))
         {
-            if(Boton.name == "Subir")
+            if(Boton.name == "Activar")
             {
                 Plataforma.GetComponent<Animator>().speed = 1;
-                Plataforma.GetComponent<Animator>().SetTrigger("Subir");
-            }
-            if(Boton.name == "Bajar")
-            {
-                Plataforma.GetComponent<Animator>().speed = 1;
-                Plataforma.GetComponent<Animator>().SetTrigger("Bajar");
+                Plataforma.GetComponent<Animator>().SetTrigger("Activar");
             }
             if(Boton.name == "Parar")
             {
                 Plataforma.GetComponent<Animator>().speed = 0;
+            }
+            if(Boton.name == "Drop")
+            {
+                Plataforma.GetComponent<Animator>().speed = 1;
+                Plataforma.GetComponent<Animator>().SetTrigger("Inclinar");
+            }
+            if(Boton.name == "Reset")
+            {
+                Plataforma.GetComponent<Animator>().speed = 1;
+                Plataforma.GetComponent<Animator>().SetTrigger("Reset");
             }
         }
     }
