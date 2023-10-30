@@ -15,7 +15,7 @@ public class PressureSwitch : MonoBehaviour
         animator.SetBool("Press", true);
     }
 
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         Puerta.RemovePressureSwitch(this);
         animator.SetBool("Press", false);

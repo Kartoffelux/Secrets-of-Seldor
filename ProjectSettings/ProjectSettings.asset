@@ -616,8 +616,10 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
+    Android: OBI_ONI_SUPPORTED
     Server: PROBUILDER_EXPERIMENTAL_FEATURES
-    Standalone: PROBUILDER_EXPERIMENTAL_FEATURES
+    Standalone: PROBUILDER_EXPERIMENTAL_FEATURES;OBI_ONI_SUPPORTED
+    iPhone: OBI_ONI_SUPPORTED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

@@ -14,7 +14,7 @@ public class Botón : Interactable
     private Cañon Cañon;
 
     [SerializeField]
-    private GameObject Cañoncito;
+    private GameObject AnimacionCañon;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,10 +36,13 @@ public class Botón : Interactable
                 Plataforma.GetComponent<Animator>().speed = 1;
                 Plataforma.GetComponent<Animator>().SetTrigger("Activar");
             }
-            if(Boton.name == "Parar")
+            if(Boton.name == "Parar Plataforma")
             {
                 Plataforma.GetComponent<Animator>().speed = 0;
-                Cañoncito.GetComponent<Animator>().speed = 0;
+            }
+            if(Boton.name == "Parar Cañon")
+            {
+                AnimacionCañon.GetComponent<Animator>().speed = 0;
             }
             if(Boton.name == "Drop")
             {
@@ -57,8 +60,8 @@ public class Botón : Interactable
             }
             if(Boton.name == "Activar Cañon")
             {
-                Cañoncito.GetComponent<Animator>().speed = 1;
-                Cañoncito.GetComponent<Animator>().SetTrigger("Activar");
+                AnimacionCañon.GetComponent<Animator>().speed = 1;
+                AnimacionCañon.GetComponent<Animator>().SetTrigger("Activar");
             }
         }
     }
