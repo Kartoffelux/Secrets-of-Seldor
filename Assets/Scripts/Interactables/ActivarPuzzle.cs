@@ -5,31 +5,35 @@ using UnityEngine;
 public class ActivarPuzzle : Interactable
 {
     [SerializeField] 
-    private GameObject[] Objetos;
+    private GameObject[] ObjetosAnimados;
     [SerializeField] 
     private ActivarPuzzle Boton;
     [SerializeField] 
-    private GameObject Esfera;
+    private GameObject[] ObjetosRespawn;
     [SerializeField] 
-    public PressureSwitch Switch; 
-    public Transform spawn;
+    private GameObject[] prefab; 
+    public Transform[] spawn;
     protected override void Interact()
     {
         if(Input.GetKey(KeyCode.E))
         {
             if(Boton.name == "Activar"){
-                for(int i=0; i < Objetos.Length; i++)
+                for(int i=0; i < ObjetosAnimados.Length; i++)
                 {
-                    Objetos[i].GetComponent<Animator>().SetBool("Activado", true);
+                    ObjetosAnimados[i].GetComponent<Animator>().SetBool("Activado", true);
                 }
             }
             if(Boton.name == "Reiniciar")
             {
-                Destroy(Esfera);
-                var _esfera = Instantiate(Esfera, spawn.position, spawn.rotation);
-                for(int i=0; i < Objetos.Length; i++)
+                for(int i = 0; i < ObjetosRespawn.Length; i++ )
                 {
-                    Objetos[i].GetComponent<Animator>().SetBool("Activado", false);
+                    Destroy(ObjetosRespawn[i]); 
+                    var _objetosrespawn = Instantiate(prefab[i], spawn[i].position, spawn[i].rotation);
+                    ObjetosRespawn[i] = _objetosrespawn;
+                }
+                for(int i = 0; i < ObjetosAnimados.Length; i++)
+                {
+                    ObjetosAnimados[i].GetComponent<Animator>().SetBool("Activado", false);
                 }
             }
         }

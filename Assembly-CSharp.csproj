@@ -53,9 +53,9 @@
      <Compile Include="Assets\Scripts\Interactables\Esfera.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Input\Player Input.cs" />
+     <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <Compile Include="Assets\Scripts\Interactables\Botón.cs" />
      <Compile Include="Assets\Scripts\Presure Plate\PressureSwitch.cs" />
-     <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
