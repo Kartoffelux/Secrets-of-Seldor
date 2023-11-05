@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Presure Plate\Puerta.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMotor.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
+     <Compile Include="Assets\Scripts\Interactables\BotonesCañon.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
      <Compile Include="Assets\Scripts\Interactables\Esfera.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />

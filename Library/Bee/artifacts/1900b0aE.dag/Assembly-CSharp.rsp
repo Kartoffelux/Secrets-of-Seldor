@@ -362,6 +362,7 @@
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Interactable.cs"
 "Assets/Scripts/Interactables/ActivarPuzzle.cs"
+"Assets/Scripts/Interactables/BotonesCañon.cs"
 "Assets/Scripts/Interactables/Botón.cs"
 "Assets/Scripts/Interactables/CortarCuerda.cs"
 "Assets/Scripts/Interactables/Esfera.cs"
