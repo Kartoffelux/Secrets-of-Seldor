@@ -20,7 +20,10 @@ public class ActivarPuzzle : Interactable
             if(Boton.name == "Activar"){
                 for(int i=0; i < ObjetosAnimados.Length; i++)
                 {
-                    ObjetosAnimados[i].GetComponent<Animator>().SetBool("Activado", true);
+                    if(!ObjetosAnimados[i].GetComponent<Animator>().GetBool("Activado"))
+                    {
+                        ObjetosAnimados[i].GetComponent<Animator>().SetBool("Activado", true);
+                    }
                 }
             }
             if(Boton.name == "Reiniciar")

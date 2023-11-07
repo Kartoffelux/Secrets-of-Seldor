@@ -359,6 +359,10 @@
 "Assets/Input/Player Input.cs"
 "Assets/Scripts/Cañon/Cañon.cs"
 "Assets/Scripts/Cañon/Proyectil.cs"
+"Assets/Scripts/Doors/ButtonSwitch.cs"
+"Assets/Scripts/Doors/PressureSwitch.cs"
+"Assets/Scripts/Doors/Puerta.cs"
+"Assets/Scripts/Doors/PuertaSinSwitch.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Interactable.cs"
 "Assets/Scripts/Interactables/ActivarPuzzle.cs"
@@ -370,10 +374,6 @@
 "Assets/Scripts/Player/PlayerLook.cs"
 "Assets/Scripts/Player/PlayerMotor.cs"
 "Assets/Scripts/Player/PlayerUI.cs"
-"Assets/Scripts/Presure Plate/ButtonSwitch.cs"
-"Assets/Scripts/Presure Plate/PressureSwitch.cs"
-"Assets/Scripts/Presure Plate/Puerta.cs"
-"Assets/Scripts/Presure Plate/PuertaSinSwitch.cs"
 -langversion:9.0
 
 /deterministic

@@ -36,17 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Presure Plate\ButtonSwitch.cs" />
+     <Compile Include="Assets\Scripts\Doors\ButtonSwitch.cs" />
      <Compile Include="Assets\Scripts\Cañon\Cañon.cs" />
      <Compile Include="Assets\Scripts\Cañon\Proyectil.cs" />
-     <Compile Include="Assets\Scripts\Presure Plate\PuertaSinSwitch.cs" />
+     <Compile Include="Assets\Scripts\Doors\PuertaSinSwitch.cs" />
      <Compile Include="Assets\Scripts\Interactables\CortarCuerda.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerUI.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
-     <Compile Include="Assets\Scripts\Presure Plate\Puerta.cs" />
+     <Compile Include="Assets\Scripts\Doors\Puerta.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMotor.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
      <Compile Include="Assets\Scripts\Interactables\BotonesCañon.cs" />
@@ -56,7 +56,7 @@
      <Compile Include="Assets\Input\Player Input.cs" />
      <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <Compile Include="Assets\Scripts\Interactables\Botón.cs" />
-     <Compile Include="Assets\Scripts\Presure Plate\PressureSwitch.cs" />
+     <Compile Include="Assets\Scripts\Doors\PressureSwitch.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
