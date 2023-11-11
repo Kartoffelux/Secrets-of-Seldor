@@ -370,6 +370,8 @@
 "Assets/Scripts/Interactables/Botón.cs"
 "Assets/Scripts/Interactables/CortarCuerda.cs"
 "Assets/Scripts/Interactables/Esfera.cs"
+"Assets/Scripts/Interactables/PlataformaEvent.cs"
+"Assets/Scripts/Interactables/Reiniciar.cs"
 "Assets/Scripts/Player/PlayerInteract.cs"
 "Assets/Scripts/Player/PlayerLook.cs"
 "Assets/Scripts/Player/PlayerMotor.cs"

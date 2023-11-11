@@ -5,38 +5,42 @@ using UnityEngine;
 public class ActivarPuzzle : Interactable
 {
     [SerializeField] 
-    private GameObject[] ObjetosAnimados;
+    private GameObject[] Objetos;
     [SerializeField] 
-    private ActivarPuzzle Boton;
-    [SerializeField] 
-    private GameObject[] ObjetosRespawn;
-    [SerializeField] 
-    private GameObject[] prefab; 
-    public Transform[] spawn;
+    private ActivarPuzzle Boton; 
     protected override void Interact()
     {
         if(Input.GetKey(KeyCode.E))
         {
-            if(Boton.name == "Activar"){
-                for(int i=0; i < ObjetosAnimados.Length; i++)
+            if(Boton.name == "Activar")
+            {
+                for(int i=0; i < Objetos.Length; i++)
                 {
-                    if(!ObjetosAnimados[i].GetComponent<Animator>().GetBool("Activado"))
-                    {
-                        ObjetosAnimados[i].GetComponent<Animator>().SetBool("Activado", true);
-                    }
+                    Objetos[i]. GetComponent<Animator>().speed = 1;
+                    Objetos[i].GetComponent<Animator>().SetBool("Activado", true);
                 }
             }
-            if(Boton.name == "Reiniciar")
+            if (Boton.name == "Parar")
             {
-                for(int i = 0; i < ObjetosRespawn.Length; i++ )
+                for(int i=0; i< Objetos.Length; i++)
                 {
-                    Destroy(ObjetosRespawn[i]); 
-                    var _objetosrespawn = Instantiate(prefab[i], spawn[i].position, spawn[i].rotation);
-                    ObjetosRespawn[i] = _objetosrespawn;
+                    Objetos[i]. GetComponent<Animator>().speed = 0;
                 }
-                for(int i = 0; i < ObjetosAnimados.Length; i++)
+            }
+            if(Boton.name == "Activar Plataforma")
+            {
+                for(int i=0; i < Objetos.Length; i++)
                 {
-                    ObjetosAnimados[i].GetComponent<Animator>().SetBool("Activado", false);
+                    Objetos[i]. GetComponent<Animator>().speed = 1;
+                    Objetos[i].GetComponent<Animator>().SetBool("Activado", true);
+                }
+            }
+            if(Boton.name == "Drop")
+            {
+                for(int i=0; i < Objetos.Length; i++)
+                {
+                    Objetos[i]. GetComponent<Animator>().speed = 1;
+                    Objetos[i].GetComponent<Animator>().SetBool("Activado", true);
                 }
             }
         }

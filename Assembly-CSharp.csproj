@@ -52,7 +52,9 @@
      <Compile Include="Assets\Scripts\Interactables\BotonesCañon.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
      <Compile Include="Assets\Scripts\Interactables\Esfera.cs" />
+     <Compile Include="Assets\Scripts\Interactables\PlataformaEvent.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Reiniciar.cs" />
      <Compile Include="Assets\Input\Player Input.cs" />
      <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <Compile Include="Assets\Scripts\Interactables\Botón.cs" />
