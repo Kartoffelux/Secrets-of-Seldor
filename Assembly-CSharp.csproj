@@ -51,7 +51,6 @@
      <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
      <Compile Include="Assets\Scripts\Interactables\BotonesCañon.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
-     <Compile Include="Assets\Scripts\Interactables\Esfera.cs" />
      <Compile Include="Assets\Scripts\Interactables\PlataformaEvent.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Scripts\Interactables\Reiniciar.cs" />
@@ -59,6 +58,10 @@
      <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <Compile Include="Assets\Scripts\Interactables\Botón.cs" />
      <Compile Include="Assets\Scripts\Doors\PressureSwitch.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Rotate.cs" />
+     <Compile Include="Assets\Scripts\Interactables\LockControl.cs" />
+     <Compile Include="Assets\Scripts\PressureButtonDisappear.cs" />
+     <Compile Include="Assets\Scripts\Interactables\ObjetoAgarrable.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
