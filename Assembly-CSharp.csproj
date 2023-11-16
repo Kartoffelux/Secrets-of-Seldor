@@ -37,19 +37,27 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Doors\ButtonSwitch.cs" />
-     <Compile Include="Assets\Scripts\Cañon\Cañon.cs" />
-     <Compile Include="Assets\Scripts\Cañon\Proyectil.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Cañon\Cañon.cs" />
+     <Compile Include="Assets\Scripts\Interactables\ObjetoAgarrable.cs" />
+     <Compile Include="Assets\Scripts\BookEntry.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Cañon\Proyectil.cs" />
      <Compile Include="Assets\Scripts\Doors\PuertaSinSwitch.cs" />
      <Compile Include="Assets\Scripts\Interactables\CortarCuerda.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Rotate.cs" />
+     <Compile Include="Assets\Scripts\PauseandBook.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerUI.cs" />
+     <Compile Include="Assets\Scripts\PressureButtonDisappear.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
+     <Compile Include="Assets\Scripts\paper.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
      <Compile Include="Assets\Scripts\Doors\Puerta.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMotor.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
      <Compile Include="Assets\Scripts\Interactables\BotonesCañon.cs" />
+     <Compile Include="Assets\Scripts\Interactables\LockControl.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Book.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
      <Compile Include="Assets\Scripts\Interactables\PlataformaEvent.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
@@ -58,10 +66,7 @@
      <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <Compile Include="Assets\Scripts\Interactables\Botón.cs" />
      <Compile Include="Assets\Scripts\Doors\PressureSwitch.cs" />
-     <Compile Include="Assets\Scripts\Interactables\Rotate.cs" />
-     <Compile Include="Assets\Scripts\Interactables\LockControl.cs" />
-     <Compile Include="Assets\Scripts\PressureButtonDisappear.cs" />
-     <Compile Include="Assets\Scripts\Interactables\ObjetoAgarrable.cs" />
+     <None Include="Assets\Materiales\Shader\one-side.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -7,12 +7,17 @@ public class LockControl : MonoBehaviour
     private int[] result, correctCombination;
     [SerializeField] private GameObject Puerta;
     private bool IsOpen;
+    public GameObject[] Entry;
     void Start()
     {
         result =  new int[]{0,0,0};
-        correctCombination = new int[] {1,3,8};
+        correctCombination = new int[] {0,6,9};
         IsOpen = false;
         Rotate.Rotated += CheckResults;
+        for(int i = 0; i < Entry.Length; i++)
+        {
+            Entry[i].SetActive(false);
+        }
     }
 
     public void CheckResults(string wheelName, int number)
@@ -32,13 +37,11 @@ public class LockControl : MonoBehaviour
 
         if(result[0] == correctCombination[0] && result[1] == correctCombination[1] && result[2] == correctCombination[2])
         {
-            Debug.Log("Es Correcto");
             IsOpen = true;
             OpenDoor(IsOpen);
         }
         else
         {
-            Debug.Log("Es Incorrecto");
             IsOpen = false;
             CloseDoor(IsOpen);
         }
@@ -48,6 +51,10 @@ public class LockControl : MonoBehaviour
     {
         if(IsOpen)
         {
+            for(int i = 0; i < Entry.Length; i++)
+            {
+                Entry[i].SetActive(true);
+            }
             Puerta.GetComponent<Animator>().SetBool("IsOpen", IsOpen);
         }
     }
