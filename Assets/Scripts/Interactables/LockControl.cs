@@ -8,6 +8,9 @@ public class LockControl : MonoBehaviour
     [SerializeField] private GameObject Puerta;
     private bool IsOpen;
     public GameObject[] Entry;
+    public GameObject Mensaje;
+    private bool isActive, activeCoro;
+    private int time = 2;
     void Start()
     {
         result =  new int[]{0,0,0};
@@ -51,10 +54,15 @@ public class LockControl : MonoBehaviour
     {
         if(IsOpen)
         {
-            for(int i = 0; i < Entry.Length; i++)
+            if(isActive == false)
             {
-                Entry[i].SetActive(true);
+                for(int i = 0; i < Entry.Length; i++)
+                {
+                    Entry[i].SetActive(true);
+                }
+                isActive = true;
             }
+            StartCoroutine(Wait(time, isActive));
             Puerta.GetComponent<Animator>().SetBool("IsOpen", IsOpen);
         }
     }
@@ -64,5 +72,16 @@ public class LockControl : MonoBehaviour
         {
             Puerta.GetComponent<Animator>().SetBool("IsOpen", IsOpen);
         }
+    }
+    private IEnumerator Wait(float time, bool isActive)
+    {
+        activeCoro = isActive;
+        if(activeCoro)
+        {
+            Mensaje.SetActive(true);
+            yield return new WaitForSeconds(time);
+            Mensaje.SetActive(false);
+        }
+        activeCoro = false;
     }
 }

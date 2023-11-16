@@ -6,8 +6,9 @@ using UnityEngine;
 public class BookEntry : MonoBehaviour
 {
     public GameObject[] Entry;
-    public float time = 5;
+    public float time = 2;
     public GameObject Mensaje;
+    public Collider Boton;
     void Start()
     {
         for(int i = 0; i < Entry.Length; i++)
@@ -17,19 +18,26 @@ public class BookEntry : MonoBehaviour
         Mensaje.SetActive(false);
         
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
+    {
+        ActivarPaginas();
+    }
+
+    private void ActivarPaginas()
     {
         for(int i = 0; i < Entry.Length; i++)
         {
             Entry[i].SetActive(true);
         }
-        for(int i = 0; i < time; i++)
-        {
-            if(i == 0)
-            {
-                Mensaje.SetActive(true);
-            }
-        }
+        StartCoroutine(Wait(time));
+        Boton.enabled = !Boton.enabled;
+    }
+
+    private IEnumerator Wait(float time)
+    {
+        Debug.Log("Mostrar Mensaje: " + Mensaje);
+        Mensaje.SetActive(true);
+        yield return new WaitForSeconds(time);
         Mensaje.SetActive(false);
     }
 

@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Interactables\ActivarPuzzle.cs" />
      <Compile Include="Assets\Scripts\Interactables\Botón.cs" />
      <Compile Include="Assets\Scripts\Doors\PressureSwitch.cs" />
+     <Compile Include="Assets\Scripts\ShowMessage.cs" />
      <None Include="Assets\Materiales\Shader\one-side.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

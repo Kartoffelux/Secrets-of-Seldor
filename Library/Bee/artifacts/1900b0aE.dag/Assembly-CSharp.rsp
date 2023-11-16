@@ -383,6 +383,7 @@
 "Assets/Scripts/Player/PlayerMotor.cs"
 "Assets/Scripts/Player/PlayerUI.cs"
 "Assets/Scripts/PressureButtonDisappear.cs"
+"Assets/Scripts/ShowMessage.cs"
 -langversion:9.0
 
 /deterministic
